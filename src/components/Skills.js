@@ -46,6 +46,8 @@ export const Skills = () => {
                 meaningful insights.
               </p>
               <Carousel
+                autoPlay={true}
+               
                 responsive={responsive}
                 infinite={true}
                 className='owl-carousel owl-theme skill-slider'>
