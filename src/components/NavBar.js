@@ -37,14 +37,19 @@ export const NavBar = () => {
       <Navbar expand='md' className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href='/'>
-            <div style={{display:"flex",justifyContent: "center",alignItems:"flex-end",marginLeft:"50%"}}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+                marginLeft: "50%",
+              }}>
               {" "}
               <img
                 src={logo}
                 style={{ width: "60px", height: "60px" }}
                 alt='Logo'
               />
-            
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav'>
@@ -81,13 +86,13 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
               <div className='social-icon'>
-                <a href='#'>
+                <a href='https://www.linkedin.com/in/oumaima-naceur-8a5a81226/'>
                   <img src={navIcon1} alt='' />
                 </a>
-                <a href='#'>
+                <a href='https://www.facebook.com/oumeyma.naceur'>
                   <img src={navIcon2} alt='' />
                 </a>
-                <a href='#'>
+                <a href='https://www.instagram.com/oumeyma.naceur/'>
                   <img src={navIcon3} alt='' />
                 </a>
               </div>
