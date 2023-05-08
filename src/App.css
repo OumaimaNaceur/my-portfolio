@@ -264,7 +264,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner .button {
+  text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -273,13 +274,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.banner .button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner .button:hover svg {
   margin-left: 25px;
 }
 .banner img {
@@ -505,7 +506,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   opacity: 0.8;
 }
-.contact form button {
+.contact form .button {
+  text-decoration: none;
   font-weight: 700;
   color: #000;
   background-color: #fff;
@@ -516,14 +518,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.contact form button span {
+.contact form .button span {
   z-index: 1;
   position: relative;
 }
-.contact form button:hover {
+.contact form .button:hover {
   color: #fff;
 }
-.contact form button::before {
+.contact form .button::before {
   content: "";
   background: #121212;
   width: 0;
@@ -534,7 +536,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
-.contact form button:hover::before {
+.contact form .button:hover::before {
   width: 100%;
 }
 

@@ -75,9 +75,9 @@ export const Banner = () => {
                     identifying trends and patterns, and presenting findings in
                     a clear and concise manner..
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <a className="button" href="mailto:naceuur.oumaima@gmail.com ">
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>

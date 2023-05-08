@@ -97,9 +97,9 @@ export const NavBar = () => {
                 </a>
               </div>
               <HashLink to='#connect'>
-                <button className='vvd'>
+                <a  href="mailto:naceuur.oumaima@gmail.com " className='vvd'>
                   <span>Let’s Connect</span>
-                </button>
+                </a>
               </HashLink>
             </span>
           </Navbar.Collapse>
