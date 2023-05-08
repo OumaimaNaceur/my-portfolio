@@ -48,6 +48,8 @@ export const Projects = () => {
     },
   ];
 
+  const project = { title: "Dashboard", description: "", imgUrl: projImg8 }
+
   return (
     <section className='project' id='project'>
       <Container>
@@ -99,24 +101,16 @@ export const Projects = () => {
                       <Tab.Pane eventKey='second'>
                         <p>
                           {" "}
-                          For this specific initiative in Excel, I conducted a
-                          thorough analysis of sales data on behalf of a
-                          consumer goods company. My primary objective was to
-                          leverage advanced Excel functions and techniques to
-                          pinpoint key trends and insights from the data and to
-                          present them in an intuitive, visually-engaging
-                          manner. Using pivot tables and charts, I was able to
-                          gain a comprehensive understanding of customer
-                          behavior, including identifying top-selling products,
-                          purchase patterns, and customer demographics. I also
-                          employed sophisticated Excel functions like regression
-                          analysis to uncover variables that impacted sales and
-                          inform targeted marketing strategies. This project
-                          required me to integrate data from multiple sources,
-                          including sales data, customer feedback, and market
-                          research, underscoring the power of Excel in
-                          generating valuable business insights that can inform
-                          strategic decision-making.
+                          <ProjectCard {...project} full={true} />
+                          During this project, I conducted my analysis with Excel using a bike sales dataset that involves importing relevant variables such as the Gender of the buyer, Age, Income, Education, and other variables.
+
+                          Cleaning and preprocessing the data by removing duplicates, handling missing data, and ensuring proper structure is essential. Excel's sorting, filtering, and conditional formatting tools aid in data manipulation.
+
+                          I used Visualization tools like bar graphs, line graphs, and pie charts in Excel to help create a bike sales dashboard, enabling stakeholders to understand sales trends and compare performance across bike sales.
+
+                          Pivot tables summarize and aggregate data, revealing relationships between variables.
+
+                          Sharing the dashboard and findings with stakeholders is facilitated by Excel, allowing exports as PDFs or sharing the Excel file. Effective communication of insights and visualizations enables informed decision-making, identifying growth opportunities, and optimizing bike sales strategies.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey='third'>
