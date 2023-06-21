@@ -414,12 +414,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+.proj-imgbxi {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1368px) {
+  .proj-imgbxi img {
+    width: 636px;
+    height: 315px;
+  }
+}
+
+@media only screen and (min-width: 1183px) and (max-width: 1365px) {
+  .proj-imgbxi img {
+    width: 546px;
+    height: 286px;
+  }
+}
+
+@media only screen and (min-width: 982px) and (max-width:1180px) {
+  .proj-imgbxi img {
+    width: 456px;
+    height: 236px;
+  }
+}
+
+@media only screen and (min-width: 968px) and (max-width:981px) {
+  .proj-imgbxi img {
+    width: 363;
+    height: 236px;
+  }
+}
+
+@media only screen and (min-width: 752px) and (max-width:965px) {
+  .proj-imgbxi img {
+    width: 336px;
+    height: 176px;
+  }
+}
+
+.proj-imgbxi::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbxi:hover::before {
+  height: 100%;
+}
+/****************************************************************************************************************/
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -442,7 +499,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.proj-imgbx:hover  .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-imgbxi:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
